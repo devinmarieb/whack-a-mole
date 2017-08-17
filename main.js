@@ -3,17 +3,6 @@ const btn = document.querySelector('.level-buttons')
 const points = document.querySelector('.points')
 const timeText = document.querySelector('.times-up')
 
-btn.addEventListener('click', (e)=> {
-  const scoreBoard = document.querySelector('.score-board')
-  setTimer(e)
-  points.innerHTML = 0
-  timeText.style.visibility = 'hidden'
-  moles.forEach((mole) => {
-    mole.classList.add('mole')
-  })
-  scoreBoard.style.visibility = 'visible'
-})
-
 function setTimer(e) {
   let counter = 0
   let timer = setInterval(()=> {
@@ -38,6 +27,17 @@ function reset(random) {
   random.classList.remove('up')
   random.classList.add('mole')
 }
+
+btn.addEventListener('click', (e)=> {
+  const scoreBoard = document.querySelector('.score-board')
+  setTimer(e)
+  points.innerHTML = 0
+  timeText.style.visibility = 'hidden'
+  moles.forEach((mole) => {
+    mole.classList.add('mole')
+  })
+  scoreBoard.style.visibility = 'visible'
+})
 
 moles.forEach((mole) => {
   mole.addEventListener('click', (e)=> {

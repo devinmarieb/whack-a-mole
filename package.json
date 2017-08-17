@@ -1,0 +1,20 @@
+{
+  "name": "whack-a-mole",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devinmarieb/whack-a-mole.git"
+  },
+  "keywords": [],
+  "author": "Devin Beliveau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devinmarieb/whack-a-mole/issues"
+  },
+  "homepage": "https://github.com/devinmarieb/whack-a-mole#readme"
+}
