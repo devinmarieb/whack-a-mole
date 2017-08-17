@@ -11,11 +11,13 @@ btn.addEventListener('click', (e)=> {
 })
 
 function setTimer(e) {
+  let timeText = document.querySelector('.times-up')
   let counter = 0
   let timer = setInterval(()=> {
     counter ++
     if(counter === 20) {
       clearInterval(timer)
+      setTimeout(()=> timeText.style.visibility = 'visible' , 2000)
     }
     getAMole(e)
   }, 1000)

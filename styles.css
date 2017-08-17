@@ -45,11 +45,20 @@ body {
   margin: 0 auto;
   color: white;
   letter-spacing: 3px;
-  font-size: 30px;
+  font-size: 35px;
+}
+
+.times-up {
+  text-align: center;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 35px;
+  visibility: hidden;
 }
 
 .game-text {
-  color: white;
+  text-align: center;
+  color: #013220;
   letter-spacing: 3px;
   font-size: 25px;
   padding: 15px 50px;
