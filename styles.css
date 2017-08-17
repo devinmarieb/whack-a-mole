@@ -54,6 +54,7 @@ body {
   letter-spacing: 3px;
   font-size: 35px;
   visibility: hidden;
+  margin-bottom: 15px;
 }
 
 .game-text {
