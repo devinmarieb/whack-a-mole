@@ -1,24 +1,49 @@
-const moleTwo = document.getElementById('critter-two')
+const moles = document.querySelectorAll('.mole')
+const btn = document.querySelector('.level-buttons')
+const points = document.querySelector('.points')
+const timeText = document.querySelector('.times-up')
 
-function moveMole() {
+btn.addEventListener('click', (e)=> {
+  const scoreBoard = document.querySelector('.score-board')
+  setTimer(e)
+  points.innerHTML = 0
+  timeText.style.visibility = 'hidden'
+  moles.forEach((mole) => {
+    mole.classList.add('mole')
+  })
+  scoreBoard.style.visibility = 'visible'
+})
 
-  moleTwo.classList.remove('critter')
-
-  moleTwo.classList.add('up')
+function setTimer(e) {
+  let counter = 0
+  let timer = setInterval(()=> {
+    counter ++
+    if(counter === 20) {
+      clearInterval(timer)
+      setTimeout(()=> timeText.style.visibility = 'visible' , 2000)
+    }
+    getAMole(e)
+  }, 1000)
 }
 
-function reset() {
-  moleTwo.classList.remove('up')
-  moleTwo.classList.add('down')
+function getAMole(e) {
+  const button = e.target.value
+  const random = moles[Math.floor(Math.random() * moles.length)]
+  random.classList.remove('mole')
+  random.classList.add('up')
+  button === "Easy Mode" ? setTimeout(()=> reset(random), 900) : setTimeout(()=> reset(random), 500)
 }
 
-function clickEvent(e) {
-  console.log(e);
+function reset(random) {
+  random.classList.remove('up')
+  random.classList.add('mole')
 }
 
-setTimeout(()=> moveMole(), 2000)
-setTimeout(()=> reset(), 4000)
-
-moleTwo.addEventListener('click', (e)=> {
-  clickEvent(e)
+moles.forEach((mole) => {
+  mole.addEventListener('click', (e)=> {
+    if(e.screenY <= 363) {
+      points.innerHTML++
+      reset(mole);
+    }
+  })
 })

@@ -3,25 +3,72 @@ body {
   font-family: 'Luckiest Guy', cursive;
 }
 
-.title, .score {
+.title {
   text-align: center;
   color: white;
   letter-spacing: 3px;
 }
 
 .title {
-  margin: 30px 0 100px 0;
-  font-size: 40px;
+  margin: 30px 0;
+  font-size: 44px;
 }
 
-.score {
+.level-buttons {
+  text-align: center;
+}
+
+.start {
+  margin: 0 10px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 20px;
+  background-color: white;
+  color: #84DD63;
+}
+
+.start:hover {
+  background-color: #4b2400;
+  color: white;
+}
+
+.score-board {
+  text-align: center;
+  visibility: hidden;
+}
+
+.score, .points {
+  display: inline-block;
+  margin: 0 auto;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 35px;
+}
+
+.times-up {
+  text-align: center;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 35px;
+  visibility: hidden;
+  margin-bottom: 15px;
+}
+
+.game-text {
+  text-align: center;
+  color: #013220;
+  letter-spacing: 3px;
   font-size: 25px;
-  margin-top: 20px;
+  padding: 15px 50px;
 }
 
 .game-board {
   margin: 0 auto;
-  height: 400px;
+  text-align: center;
+  height: 350px;
   width: 750px;
   background-color: #84DD63;
   z-index: 1;
@@ -38,7 +85,7 @@ body {
   z-index: 3;
 }
 
-.critter {
+.mole {
   transition-duration: 0.2s;
   width: 150px;
   height: 150px;
@@ -51,6 +98,7 @@ body {
 }
 
 .up {
+  transition-duration: 0.3s;
   width: 150px;
   height: 150px;
   background-image:url('images/mole.png');
@@ -58,11 +106,10 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   top: -130px;
-  transition-duration: 0.3s;
   z-index: -1;
 }
 
-.down {
+/*.down {
   width: 150px;
   height: 150px;
   background-image:url('images/mole.png');
@@ -73,4 +120,4 @@ body {
   transition-duration: 0.2s;
   z-index: -1;
   opacity: 0;
-}
+}*/
