@@ -9,24 +9,29 @@
   </head>
   <body>
     <h1 class="title">Whack-A-Mole</h1>
-    <input type="submit" value="Start Game" id="start"></input>
+    <section class="level-buttons">
+      <input type="submit" value="Easy Mode" class="start"></input>
+      <input type="submit" value="Hard Mode" class="start"></input>
+    </section>
     <section class="game-board">
         <div class="hole">
-          <div class="mole" id="mole-one"></div>
+          <div class="mole"></div>
         </div>
         <div class="hole">
-          <div class="mole" id="mole-two"></div>
+          <div class="mole"></div>
         </div>
         <div class="hole">
-          <div class="mole" id="mole-three"></div>
+          <div class="mole"></div>
         </div>
         <div class="hole">
-          <div class="mole" id="mole-four"></div>
+          <div class="mole"></div>
         </div>
     </section>
     <section class="score-board">
-      <h2 class="score"></h2>
-      <h2 class="points"></h2>
+      <h2 class="score">Score: </h2>
+      <h2 class="points">0</h2>
+      <p class="game-text">Twenty moles will pop up!</p>
+      <p class="game-text">How many can you catch before they go back in their holes?</p>
     </section>
     <script src="main.js"></script>
   </body>
