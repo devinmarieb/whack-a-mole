@@ -5,13 +5,10 @@ body {
 
 .title {
   text-align: center;
-  color: white;
-  letter-spacing: 3px;
-}
-
-.title {
   margin: 30px 0;
-  font-size: 44px;
+  letter-spacing: 3px;
+  font-size: 38px;
+  color: #FFFFFF;
 }
 
 .level-buttons {
@@ -20,19 +17,19 @@ body {
 
 .start {
   margin: 0 10px;
-  padding: 10px;
+  padding: 8px;
   border: none;
   outline: none;
   font-size: 22px;
   font-weight: bold;
   border-radius: 20px;
-  background-color: white;
+  background-color: #FFFFFF;
   color: #84DD63;
 }
 
 .start:hover {
-  background-color: #4b2400;
-  color: white;
+  background-color: #4B2400;
+  color: #FFFFFF;
 }
 
 .score-board {
@@ -43,25 +40,25 @@ body {
 .score, .points {
   display: inline-block;
   margin: 0 auto;
-  color: white;
+  color: #FFFFFF;
   letter-spacing: 3px;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .times-up {
   text-align: center;
-  color: white;
+  color: #FFFFFF;
   letter-spacing: 3px;
-  font-size: 35px;
+  font-size: 30px;
   visibility: hidden;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .game-text {
   text-align: center;
   color: #013220;
   letter-spacing: 3px;
-  font-size: 25px;
+  font-size: 20px;
   padding: 15px 50px;
 }
 
@@ -79,7 +76,7 @@ body {
   display: inline-block;
   width: 150px;
   height: 135px;
-  background: #4b2400;
+  background: #4B2400;
   border-radius: 15px;
   margin: 180px 10px 0;
   z-index: 3;
