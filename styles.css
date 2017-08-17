@@ -3,7 +3,7 @@ body {
   font-family: 'Luckiest Guy', cursive;
 }
 
-.title, .score {
+.title {
   text-align: center;
   color: white;
   letter-spacing: 3px;
@@ -14,9 +14,32 @@ body {
   font-size: 40px;
 }
 
-.score {
+#start {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  border-radius: 15px;
+  background-color: white;
+  color: #84DD63;
+}
+
+#start:hover {
+  background-color: #4b2400;
+  color: white;
+}
+
+.score-board {
+  text-align: center;
+}
+
+.score, .points {
+  display: inline-block;
+  margin: 0 auto;
+  color: white;
+  letter-spacing: 3px;
   font-size: 25px;
-  margin-top: 20px;
 }
 
 .game-board {
@@ -38,7 +61,7 @@ body {
   z-index: 3;
 }
 
-.critter {
+.mole {
   transition-duration: 0.2s;
   width: 150px;
   height: 150px;

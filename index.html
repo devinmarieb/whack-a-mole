@@ -9,21 +9,25 @@
   </head>
   <body>
     <h1 class="title">Whack-A-Mole</h1>
+    <input type="submit" value="Start Game" id="start"></input>
     <section class="game-board">
         <div class="hole">
-          <div class="critter" id="critter-one"></div>
+          <div class="mole" id="mole-one"></div>
         </div>
         <div class="hole">
-          <div class="critter" id="critter-two"></div>
+          <div class="mole" id="mole-two"></div>
         </div>
         <div class="hole">
-          <div class="critter" id="critter-three"></div>
+          <div class="mole" id="mole-three"></div>
         </div>
         <div class="hole">
-          <div class="critter" id="critter-four"></div>
+          <div class="mole" id="mole-four"></div>
         </div>
     </section>
-    <h2 class="score">Score: <span class="points">0</span></h2>
+    <section class="score-board">
+      <h2 class="score"></h2>
+      <h2 class="points"></h2>
+    </section>
     <script src="main.js"></script>
   </body>
 </html>

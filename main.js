@@ -1,24 +1,35 @@
-const moleTwo = document.getElementById('critter-two')
+const moles = document.querySelectorAll('.mole')
+const startBtn = document.getElementById('start')
+const score = document.querySelector('.score')
+let points = document.querySelector('.points')
 
-function moveMole() {
+startBtn.addEventListener('click', ()=> {
+  score.innerHTML = 'Score: '
+  points.innerHTML = 0
+  getAMole()
+})
 
-  moleTwo.classList.remove('critter')
+function getAMole() {
+  let random = moles[Math.floor(Math.random() * moles.length)]
+  random.classList.remove('mole')
+  random.classList.add('up')
+  setTimeout(()=> reset(random), 1000)
 
-  moleTwo.classList.add('up')
 }
 
-function reset() {
-  moleTwo.classList.remove('up')
-  moleTwo.classList.add('down')
+function reset(random) {
+  random.classList.remove('up')
+  random.classList.add('down')
 }
 
-function clickEvent(e) {
-  console.log(e);
-}
-
-setTimeout(()=> moveMole(), 2000)
-setTimeout(()=> reset(), 4000)
-
-moleTwo.addEventListener('click', (e)=> {
-  clickEvent(e)
+moles.forEach(function(mole) {
+  mole.addEventListener('click', (e)=> {
+    let points = 0
+    let score = document.querySelector('.points')
+    if(e.screenY <= 450) {
+    reset(mole);
+    points++
+    score.innerHTML = points
+    }
+  })
 })
