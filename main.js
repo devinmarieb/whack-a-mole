@@ -41,6 +41,7 @@ function reset(random) {
 
 moles.forEach((mole) => {
   mole.addEventListener('click', (e)=> {
+    console.log(e.screenY);
     if(e.screenY <= 363) {
       points.innerHTML++
       reset(mole);
