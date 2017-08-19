@@ -6,12 +6,12 @@ const timeText = document.querySelector('.times-up')
 function setTimer(e) {
   disableButtons()
   let counter = 0
-  let timer = setInterval(()=> {
+  const timer = setInterval(()=> {
     counter ++
     if(counter === 20) {
       clearInterval(timer)
-      setTimeout(()=> timeText.style.visibility = 'visible' , 2000)
-      setTimeout(()=> enableButtons(), 2000)
+      setTimeout(()=> timeText.style.visibility = 'visible' , 1500)
+      setTimeout(()=> enableButtons(), 1500)
     }
     getAMole(e)
   }, 1000)
@@ -22,7 +22,7 @@ function getAMole(e) {
   const random = moles[Math.floor(Math.random() * moles.length)]
   random.classList.remove('mole')
   random.classList.add('up')
-  button === "Easy Mode" ? setTimeout(()=> reset(random), 900) : setTimeout(()=> reset(random), 450)
+  button === "Easy Mode" ? setTimeout(()=> reset(random), 900) : setTimeout(()=> reset(random), 500)
 }
 
 function reset(random) {
