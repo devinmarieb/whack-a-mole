@@ -8,7 +8,7 @@ body {
   text-align: center;
   letter-spacing: 3px;
   font-size: 38px;
-  color: #FFFFFF;
+  color: #FCFCFC;
 }
 
 .level-buttons {
@@ -23,13 +23,13 @@ body {
   border-radius: 20px;
   font-size: 22px;
   font-weight: bold;
-  background-color: #FFFFFF;
+  background-color: #FCFCFC;
   color: #84BE6A;
 }
 
 .start:hover {
   background-color: #4B2400;
-  color: #FFFFFF;
+  color: #FCFCFC;
 }
 
 .start:disabled {
@@ -48,7 +48,7 @@ body {
   margin: 0 auto;
   letter-spacing: 3px;
   font-size: 30px;
-  color: #FFFFFF;
+  color: #FCFCFC;
 }
 
 .times-up {
