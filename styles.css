@@ -1,5 +1,5 @@
 body {
-  background-color: #84DD63;
+  background-color: #84BE6A;
   font-family: 'Luckiest Guy', cursive;
 }
 
@@ -24,7 +24,7 @@ body {
   font-size: 22px;
   font-weight: bold;
   background-color: #FFFFFF;
-  color: #84DD63;
+  color: #84BE6A;
 }
 
 .start:hover {
@@ -34,7 +34,7 @@ body {
 
 .start:disabled {
   background-color: #013220;
-  color: #84DD63;
+  color: #84BE6A;
 }
 
 .score-board {
@@ -74,7 +74,7 @@ body {
   height: 325px;
   margin: 0 auto;
   text-align: center;
-  background-color: #84DD63;
+  background-color: #84BE6A;
 }
 
 .hole {
